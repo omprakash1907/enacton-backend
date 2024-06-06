@@ -5,7 +5,7 @@ const getProductsWithImageURLs = async () => {
         const products = await productModel.find();
         const productsWithImageURLs = products.map(product => ({
             ...product._doc,
-            productImgURL: `http://localhost:3000/${product.productImg}` 
+            productImgURL: `https://enacton-backend.vercel.app/${product.productImg}` 
         }));
         return productsWithImageURLs;
     } catch (error) {
