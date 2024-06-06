@@ -2,13 +2,13 @@ const express = require("express");
 const dbConnection = require("./src/config/db");
 const productRouter = require("./src/router/productRoute");
 const cors = require("cors");
-app.use(cors(
-    {
-        origin : ['https://enact-onfrontend.vercel.app'],
-        methods : ['POST','GET'],
-        credentials : true
-    }
-));
+// app.use(cors(
+//     {
+//         origin : ['https://enact-onfrontend.vercel.app'],
+//         methods : ['POST','GET'],
+//         credentials : true
+//     }
+// ));
 
 const app = express()
 
