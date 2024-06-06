@@ -4,7 +4,7 @@ const productRouter = require("./src/router/productRoute");
 const cors = require("cors");
 app.use(cors(
     {
-        origin : ['https://enacton-backend.vercel.app/'],
+        origin : ['https://enact-onfrontend.vercel.app/'],
         methods : ['POST','GET'],
         credentials : true
     }
